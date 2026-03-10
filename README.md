@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🇪🇸 Entrenador de Español - Spanish Structure Trainer
 
 Aplicación web interactiva para aprender las estructuras esenciales de las frases en español mediante un sistema de gamificación.
@@ -36,3 +37,7 @@ flask init-db
 
 # Ejecutar la aplicación
 flask run --port 5001
+=======
+# spanish_trainer
+spanish-trainer
+>>>>>>> 5250a4608059f3aed7cae8cf6ef31a286625ff4e
