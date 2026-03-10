@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Logros{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Mis Logros</h1>
+    <div class="row">
+        {% for achievement in achievements %}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>{{ achievement.name }}</h5>
+                    <p>{{ achievement.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

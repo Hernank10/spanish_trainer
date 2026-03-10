@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Ranking{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Ranking de Usuarios</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Nivel</th>
+                <th>XP</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in xp_leaderboard %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.level }}</td>
+                <td>{{ user.total_xp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

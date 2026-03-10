@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Detalle del Ejercicio{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ exercise.sentence }}</h1>
+    <div class="card">
+        <div class="card-body">
+            <h5>Componentes:</h5>
+            <ul>
+                <li>👤 Quién: {{ exercise.quien or 'No aplica' }}</li>
+                <li>🎬 Verbo: {{ exercise.verbo }}</li>
+                <li>📦 Qué: {{ exercise.que or 'No aplica' }}</li>
+                <li>🎯 A quién: {{ exercise.a_quien or 'No aplica' }}</li>
+            </ul>
+            <p>Contexto: {{ exercise.contexto }}</p>
+            <p>Tiempo: {{ exercise.tiempo_verbal }}</p>
+            <p>Dificultad: {{ exercise.dificultad }}/5</p>
+            <p>XP: {{ exercise.xp_reward }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

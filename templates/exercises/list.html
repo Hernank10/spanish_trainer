@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Ejercicios{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Todos los Ejercicios</h1>
+    <div class="row">
+        {% for exercise in exercises.items %}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>{{ exercise.sentence[:50] }}...</h5>
+                    <p>Contexto: {{ exercise.contexto }}</p>
+                    <p>Dificultad: {{ exercise.dificultad }}/5</p>
+                    <a href="{{ url_for('exercise_detail', id=exercise.id) }}" class="btn btn-sm btn-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

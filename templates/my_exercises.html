@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Mis Ejercicios{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Mis Ejercicios Creados</h1>
+    <div class="row">
+        {% for exercise in exercises %}
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>{{ exercise.sentence }}</h5>
+                    <p>Contexto: {{ exercise.contexto }}</p>
+                    <p>Dificultad: {{ exercise.dificultad }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Perfil de {{ user.username }}</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Estadísticas</h5>
+                    <p>Nivel: {{ user.level }}</p>
+                    <p>XP Total: {{ user.total_xp }}</p>
+                    <p>Ejercicios: {{ user.exercises_completed }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

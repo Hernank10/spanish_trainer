@@ -1,0 +1,40 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "sentence": "El profesor explicó la lección a los estudiantes",
+      "quien": "El profesor",
+      "verbo": "explicó",
+      "que": "la lección",
+      "a_quien": "a los estudiantes",
+      "contexto": "academico",
+      "tiempo_verbal": "pasado",
+      "dificultad": 2,
+      "xp_reward": 15
+    },
+    {
+      "id": 2,
+      "sentence": "La empresa lanzará un nuevo producto para el mercado internacional",
+      "quien": "La empresa",
+      "verbo": "lanzará",
+      "que": "un nuevo producto",
+      "a_quien": "para el mercado internacional",
+      "contexto": "laboral",
+      "tiempo_verbal": "futuro",
+      "dificultad": 3,
+      "xp_reward": 20
+    },
+    {
+      "id": 3,
+      "sentence": "Los niños juegan en el parque con sus amigos",
+      "quien": "Los niños",
+      "verbo": "juegan",
+      "que": "en el parque",
+      "a_quien": "con sus amigos",
+      "contexto": "cotidiano",
+      "tiempo_verbal": "presente",
+      "dificultad": 1,
+      "xp_reward": 10
+    }
+  ]
+}

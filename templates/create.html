@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Crear Ejercicio{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Crear Nuevo Ejercicio</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            {{ form.contexto.label(class="form-label") }}
+            {{ form.contexto(class="form-select") }}
+        </div>
+        <div class="mb-3">
+            {{ form.tiempo.label(class="form-label") }}
+            {{ form.tiempo(class="form-select") }}
+        </div>
+        <div class="mb-3">
+            {{ form.quien.label(class="form-label") }}
+            {{ form.quien(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.verbo.label(class="form-label") }}
+            {{ form.verbo(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.que.label(class="form-label") }}
+            {{ form.que(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.a_quien.label(class="form-label") }}
+            {{ form.a_quien(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.dificultad.label(class="form-label") }}
+            {{ form.dificultad(class="form-select") }}
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+{% endblock %}
